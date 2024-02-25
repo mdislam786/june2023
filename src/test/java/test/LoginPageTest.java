@@ -33,7 +33,7 @@ public class LoginPageTest extends TestBase {
 		loginPageObj.enterUserName(ConfigReader.getProperty("username"));
 		loginPageObj.enterPassword(ConfigReader.getProperty("password"));
 		loginPageObj.clickSignInButton();
-		String expectedTitle = "Codefios QA";
+		String expectedTitle = "Codefios";
 		String actualTitle = loginPageObj.getPageTitle();
 		Assert.assertEquals(actualTitle, expectedTitle);
 		takeScreenshot(driver);
